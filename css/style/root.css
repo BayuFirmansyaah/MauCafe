@@ -1,0 +1,67 @@
+*{
+	margin: 0px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
+
+:root{
+	/*color root*/
+	--blue: #257CFE;
+	--green: #10B634;
+	--red : #F30000;
+
+
+	/*font*/
+	--poppins : "Poppins",sans-serif;
+	--montserrat : "Montserrat",sans-serif;
+	--light :300;
+	--regular : 400;
+	--semibold:600;
+	--bold: 800;
+
+}
+
+
+.f-pps-s{
+	font-family: var(--poppins);
+	font-weight: var(--light);
+}
+
+.f-pps-m{
+	font-family: var(--poppins);
+	font-weight: var(--regular);
+}
+
+.f-pps-l{
+	font-family: var(--poppins);
+	font-weight: var(--semibold);
+}
+
+.f-pps-xl{
+	font-family: var(--poppins);
+	font-weight: var(--bold);
+}
+
+
+.f-mts-s{
+	font-family: var(--montserrat);
+	font-weight: var(--light);
+}
+
+.f-mts-m{
+	font-family: var(--montserrat);
+	font-weight: var(--regular);
+}
+
+.f-mts-l{
+	font-family: var(--montserrat);
+	font-weight: var(--semibold);
+}
+
+.f-mts-xl{
+	font-family: var(--montserrat);
+	font-weight: var(--bold);
+}
