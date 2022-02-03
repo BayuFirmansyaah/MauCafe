@@ -3,6 +3,11 @@
 }
 
 
+body{
+	background-color: #d5d5d5;
+}
+
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
@@ -12,6 +17,7 @@
 	--blue: #257CFE;
 	--green: #10B634;
 	--red : #F30000;
+	--grey : #A09D9D;
 
 
 	/*font*/
@@ -64,4 +70,29 @@
 .f-mts-xl{
 	font-family: var(--montserrat);
 	font-weight: var(--bold);
+}
+
+
+/*ukuran font*/
+
+.size-head{
+	font-size: 23px;
+}
+
+.size-medium{
+	font-size: 17px;
+}
+
+
+/*alignment*/
+.t-a-l{
+	text-align: left;
+}
+
+.t-a-c{
+	text-align: center;
+}
+
+.t-a-r{
+	text-align: right;
 }
