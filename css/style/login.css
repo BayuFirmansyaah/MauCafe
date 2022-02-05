@@ -45,6 +45,10 @@
 	font-size: 15px;
 }
 
+.input-form label span{
+	color: var(--red);
+}
+
 .wrap-left,
 .wrap-right{
 	height: 30px;
