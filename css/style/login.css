@@ -66,12 +66,12 @@
 }
 
 .wrap-left input{
-	width: 25px;
+	width: 20px;
 	margin-top: -10px;
 }
 
 .wrap-left label{
-	margin-left: 15px;
+	margin-left: 10px;
 	margin-top: 6px;
 	font-size: 16px;
 }
@@ -88,7 +88,7 @@ button{
 	border: none;
 	border-radius: 10px;
 	margin-top: 30px;
-	font-size: 21px;
+	font-size: 18px;
 	background-color: var(--grey);
 	font-weight: 600;
 }
