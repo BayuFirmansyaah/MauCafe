@@ -40,7 +40,38 @@ body{
 	position: relative;
 	cursor: pointer;
 	background-color: white;
-	padding: 15px 10px;
+	padding: 20px 15px;
+}
+
+.header-nav{
+	width: 100%;
+	position: relative;
+	height: 50px;
+	background-color: red;
+	margin-bottom: 30px;
+}
+
+.button-back{
+	height: 100%;
+	width: 15%;
+	background-color: blue;
+	float: left;
+}
+
+.loc-drop{
+	width: 30%;
+	height: 100%;
+	margin-left: 18%;
+	background-color: green;
+}
+
+.buton-love{
+	width: 15%;
+	height: 100%;
+	background-color: blue;
+	position: absolute;
+	right: 0;
+	top: 0;
 }
 
 
