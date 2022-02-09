@@ -244,13 +244,15 @@
 
 .menu-list .tambah-menu-list{
 	position: absolute;
-	right: 8px;
+	right: 0px;
 	bottom: 8px;
 	font-size: 12px;
 	background-color: white;
 	padding: 2px 6px;
 	border-radius: 10px;
 	border: 1px solid black;
+	width: 80px;
+	text-align: center;
 }
 
 
