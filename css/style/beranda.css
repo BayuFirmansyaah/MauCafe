@@ -156,14 +156,20 @@
 }
 
 .box-menu{
-	width: 47%;
+	width: 48%;
 	height: 230px;
 	border: 1px solid rgba(0, 0, 0, .5);
 	position: relative;
 	float: left;
-	margin-bottom: 10px;
-	margin-left: 1.5%;
-	margin-right: 1.5%;
+	margin-bottom: 15px;
+}
+
+.box-menu:nth-child(odd){
+	margin-right: 2%;
+}
+
+.box-menu:nth-child(even){
+	margin-left: 2%;
 }
 
 .thumbnail-food{
@@ -199,6 +205,52 @@
 	border: 1px solid black;
 }
 
+.wrap-menu-list{
+	width: 100%;
+	min-height: 720px;
+}
 
+.box-menu-list{
+	width: 100%;
+	height: 125px;
+	padding: 5px;
+	border-bottom: 1px solid var(--grey);
+	position: relative;
+}
+
+
+.thumbnail-menu-list{
+	width: 80px;
+	height: 80px;
+	background-color: #ababab;
+	position: absolute;
+	float: right;
+	right: 0px;
+	top: 5px;
+}
+
+.title-menu-list{
+	font-size: 17px;
+}
+
+.box-menu-list p{
+	font-size: 14px;
+	margin-top: -5px;
+}
+
+.harga-menu{
+	font: 15px;
+}
+
+.menu-list .tambah-menu-list{
+	position: absolute;
+	right: 8px;
+	bottom: 8px;
+	font-size: 12px;
+	background-color: white;
+	padding: 2px 6px;
+	border-radius: 10px;
+	border: 1px solid black;
+}
 
 

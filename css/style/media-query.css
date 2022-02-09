@@ -13,4 +13,16 @@
 	.body{
 		width: 100%;
 	}
+
+	.header-nav{
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 100;
+	}
+
+	.search-wrap{
+		margin-top: 60px;
+	}
 }
