@@ -1,5 +1,6 @@
 *{
 	margin: 0px;
+	box-sizing: border-box;
 }
 
 
@@ -41,38 +42,80 @@ body{
 	cursor: pointer;
 	background-color: white;
 	padding: 20px 15px;
+	overflow: hidden;
 }
 
 .header-nav{
 	width: 100%;
-	position: relative;
+	position:fixed;
 	height: 50px;
-	background-color: red;
-	margin-bottom: 30px;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 100;
 }
 
 .button-back{
 	height: 100%;
-	width: 15%;
-	background-color: blue;
+	width: 10%;
+	line-height: 50px;
+	text-align: left;
+	padding-left: 10px;
+	font-size: 23px;
 	float: left;
 }
 
 .loc-drop{
 	width: 30%;
 	height: 100%;
-	margin-left: 18%;
+	margin-left: 10.5%;
 	background-color: green;
 }
 
 .buton-love{
 	width: 15%;
 	height: 100%;
-	background-color: blue;
 	position: absolute;
 	right: 0;
 	top: 0;
+	line-height: 50px;
+	text-align: center;
+	font-size: 25px;
 }
+
+.button-bar{
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 100;
+}
+
+.wrap-icon-button-bar,
+.wrapper-header-nav{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transform: translateX(-50%);
+	left: 50%;
+	background-color: white;
+	border-top: 1px solid var(--grey);
+}
+
+.icon-bar{
+	width: 20%;
+	text-align: center;
+	line-height: 60px;
+	height: 100%;
+	float: left;
+	font-size: 23.5px;
+}
+
+
+
+/*end resuable element*/
 
 
 /*font*/
