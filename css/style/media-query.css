@@ -1,6 +1,18 @@
 /*media query*/
+@media(min-width: 1000px){
+	.wrap-icon-button-bar,
+	.wrapper-header-nav{
+		width: 33%;
+	}
+}
+
 @media(max-width: 992px){
 	.body{
+		width: 45%;
+	}
+
+	.wrap-icon-button-bar,
+	.wrapper-header-nav{
 		width: 45%;
 	}
 }	
@@ -14,15 +26,8 @@
 		width: 100%;
 	}
 
-	.header-nav{
-		position: fixed;
-		top: 0;
-		left: 0;
-		right: 0;
-		z-index: 100;
-	}
-
-	.search-wrap{
-		margin-top: 60px;
+	.wrap-icon-button-bar,
+	.wrapper-header-nav{
+		width: 100%;
 	}
 }
