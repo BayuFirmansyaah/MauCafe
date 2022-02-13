@@ -73,6 +73,15 @@
 	text-align: center;
 }
 
+.t-btn i{
+	position: absolute;
+	transform: translate(-50%);
+	left: 50%;
+	top: 26%;
+	font-size: 28px;
+	color: #9e9e9e;
+}
+
 .t-btn label{
 	position: absolute;
 	bottom: -33px;
@@ -176,7 +185,14 @@
 .thumbnail-food{
 	width: 100%;
 	height: 120px;
-	background-color: blue;
+	background-color: #ababab;
+}
+
+.thumbnail-food i{
+	font-size: 25px;
+	float: right;
+	margin-top: 5px;
+	margin-right: 8px;
 }
 
 .title-food{
@@ -217,6 +233,11 @@
 	padding: 5px;
 	border-bottom: 1px solid var(--grey);
 	position: relative;
+}
+
+.box-menu-list i{
+	position: absolute;
+	bottom: 12px;
 }
 
 
