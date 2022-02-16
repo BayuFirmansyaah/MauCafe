@@ -1,7 +1,8 @@
 /*media query*/
 @media(min-width: 1000px){
 	.wrap-icon-button-bar,
-	.wrapper-header-nav{
+	.wrapper-header-nav,
+	.wrap-switch-page{
 		width: 33%;
 	}
 }
@@ -12,7 +13,8 @@
 	}
 
 	.wrap-icon-button-bar,
-	.wrapper-header-nav{
+	.wrapper-header-nav,
+	.{
 		width: 45%;
 	}
 }	
@@ -27,7 +29,8 @@
 	}
 
 	.wrap-icon-button-bar,
-	.wrapper-header-nav{
+	.wrapper-header-nav,
+	.wrap-switch-page{
 		width: 100%;
 	}
 }
