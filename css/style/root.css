@@ -43,6 +43,7 @@ body{
 	background-color: white;
 	padding: 20px 15px;
 	overflow: hidden;
+	position: relative;
 }
 
 .header-nav{
@@ -52,7 +53,7 @@ body{
 	top: 0px;
 	left: 0px;
 	right: 0px;
-	z-index: 100;
+	z-index: 8;
 }
 
 .button-back{
@@ -113,7 +114,139 @@ body{
 	font-size: 23.5px;
 }
 
+.pop-up{	
+}
 
+.pop-up-size{
+	position: absolute;
+	z-index: 90;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.d-none{
+	display: none;
+}
+
+.wrap-pop-up{
+	width: 100%;
+	height: 100% !important;
+	position: absolute;
+	transform: translateX(-50%);
+	left: 50%;
+	background-color: rgba(0, 0, 0, .5);
+	z-index: 90;
+}
+
+
+.detail-pop-up{
+	width: 100%;
+	height: 500px;
+	background-color: white;
+	position: absolute;
+	left: 0px;
+	border-top-left-radius:15px;
+	border-top-right-radius:15px;
+	padding: 15px;
+	bottom: -500px;
+}
+
+.show-pop-up{
+	animation: showUp .5s ease-in-out;
+	bottom: 60px;
+}
+
+.close-pop-up{
+	animation: closeUp .5s ease-in-out;
+	bottom: -500px;
+}
+
+.thumbnail-pop-up{
+	width: 100%;
+	height: 300px;
+	background-color: grey;
+	border-radius: 12px;
+}
+
+.desc-pop-up{
+	width: 100%;
+	height: 160px;
+	margin-top: 15px;
+	position: relative;
+}
+
+.desc-pop-up .title{
+	font-size: 23.5px;
+}
+
+.desc-pop-up .harga{
+	font-size: 20px;
+	margin-left: 0px;
+}
+
+.button-add{
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	bottom: 10px;
+}
+
+.column-button-add{
+	width: 33%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+}
+
+.column-button-add input{
+	width:100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	border: 1px solid var(--grey);
+	border-radius: 8px;
+	text-align: center;
+	font-size: 28px;
+}
+
+.column-button-add:nth-child(1),
+.column-button-add:nth-child(3){
+	width: 30%;
+	background-color: var(--success);
+	color: white;
+}
+
+.column-button-add:nth-child(2){
+	margin: 0px 3%;
+}
+
+
+
+@keyframes showUp{
+	0%{
+		bottom: -500px;
+	}
+
+	100%{
+		bottom: 60px;
+	}
+}
+
+@keyframes closeUp{
+	0%{
+		bottom: 60px;
+	}
+
+	100%{
+		bottom: -500px;
+	}
+}
 
 /*end resuable element*/
 
