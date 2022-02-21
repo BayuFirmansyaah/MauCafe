@@ -118,7 +118,7 @@ body{
 }
 
 .pop-up-size{
-	position: absolute;
+	position: fixed;
 	z-index: 90;
 	top: 0px;
 	left: 0px;
@@ -153,11 +153,21 @@ body{
 	border-top-right-radius:15px;
 	padding: 15px;
 	bottom: -500px;
+	cursor: pointer;
 }
 
 .show-pop-up{
 	animation: showUp .5s ease-in-out;
 	bottom: 60px;
+}
+
+.close-pop-up-button{
+	width: 60%;
+	height: 6.5px;
+	border-radius: 20px;
+	margin: 0px auto;
+	background-color: #777575;
+	margin-bottom: 15px;
 }
 
 .close-pop-up{
@@ -192,7 +202,7 @@ body{
 	width: 100%;
 	height: 50px;
 	position: absolute;
-	bottom: 10px;
+	bottom: 20px;
 }
 
 .column-button-add{

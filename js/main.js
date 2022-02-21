@@ -1,6 +1,8 @@
 $(document).ready(() => {
 	showPopUp();
 	closePopUp();  
+	increment();
+	decrement();
 });
 
 
@@ -19,7 +21,7 @@ const showPopUp = () => {
 
 
 const closePopUp = () =>{
-	$('.wrap-pop-up').on('click',function(e){
+	$('.close-pop-up-button').on('click',function(e){
 		setTimeout(()=>{
 			$('.detail-pop-up').addClass("close-pop-up");
 		})
@@ -30,5 +32,25 @@ const closePopUp = () =>{
 			$('.detail-pop-up').removeClass("show-pop-up");
 			$('.detail-pop-up').removeClass("close-pop-up");
 		},500)
+	})
+}
+
+const increment = () => {
+	$('.button-plus').on('click',()=>{
+		let value = parseInt($('.value-pesan').val());
+			value +=1;
+		$('.value-pesan').val(value)
+	})
+}
+
+const decrement = () => {
+	$('.button-minus').on('click',()=>{
+		let value = parseInt($('.value-pesan').val());
+		if(value>0){
+			value -=1;
+		}else{
+			value = 0;
+		}
+		$('.value-pesan').val(value)
 	})
 }
