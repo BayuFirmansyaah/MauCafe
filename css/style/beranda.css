@@ -222,7 +222,9 @@
 	background-color: white;
 	border-radius: 20px;
 	border: 1px solid black;
+	height: 30px;
 }
+
 
 .wrap-menu-list{
 	width: 100%;
@@ -280,4 +282,8 @@
 	text-align: center;
 }
 
+
+.b-none{
+	border: none;
+}
 

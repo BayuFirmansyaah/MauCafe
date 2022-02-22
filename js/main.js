@@ -3,6 +3,7 @@ $(document).ready(() => {
 	closePopUp();  
 	increment();
 	decrement();
+	tambahMenu();
 });
 
 
@@ -52,5 +53,30 @@ const decrement = () => {
 			value = 0;
 		}
 		$('.value-pesan').val(value)
+	})
+}
+
+
+const tambahMenu = () => {
+	let element = `<div class="wrapper-add-menu">
+                		<div class="col-3-button-add">
+                    		<i class="fa-solid fa-minus minus-menu"></i>
+                		</div>
+                		<div class="col-3-button-add">
+                  			<input type="number" value="0" class="value-pesan-menu" disabled>
+                		</div>
+                		<div class="col-3-button-add add-menu">
+                    		<i class="fa-solid fa-plus"></i>
+                		</div>
+              		</div>`;
+
+	$('.tambah-menu').on('click',function(e){
+		$(this).addClass('b-none');
+		$(this).html(element);
+	})
+
+	$('.tambah-menu-list').on('click',function(e){
+		$(this).addClass('b-none');
+		$(this).html(element);
 	})
 }
