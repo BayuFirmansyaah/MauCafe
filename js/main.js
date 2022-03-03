@@ -38,21 +38,21 @@ const closePopUp = () =>{
 
 const increment = () => {
 	$('.button-plus').on('click',()=>{
-		let value = parseInt($('.value-pesan').val());
+		let value = parseInt($('.value-pesan').text());
 			value +=1;
-		$('.value-pesan').val(value)
+		$('.value-pesan').html(value)
 	})
 }
 
 const decrement = () => {
 	$('.button-minus').on('click',()=>{
-		let value = parseInt($('.value-pesan').val());
+		let value = parseInt($('.value-pesan').text());
 		if(value>0){
 			value -=1;
 		}else{
 			value = 0;
 		}
-		$('.value-pesan').val(value)
+		$('.value-pesan').html(value)
 	})
 }
 
