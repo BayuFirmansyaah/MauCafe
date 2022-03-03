@@ -26,7 +26,10 @@
 	float: right;
 	margin-left: 10px;
 	padding: 10px 0px;
-	margin-top: -100px;
+	padding-left: 15px;
+	position: absolute;
+	top: 0;
+	right: 10px;
 
 }
 
@@ -93,10 +96,10 @@
 	background-color: #257CFE;
 	left: 5%;
 	right: 5%;
-	bottom: 15px;
+	bottom: 65px;
 	font-size: 19px;
 	text-align: center;
 	line-height: 40px;
-	border-radius: 15px;
+	border-radius: 8px;
 	color: white;
 }
