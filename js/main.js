@@ -10,7 +10,7 @@ $(document).ready(() => {
 
 // function show pop up
 const showPopUp = () => {
-	$('.thumbnail-click').on('click',function(e){
+	$('.tambah-menu').on('click',function(e){
 		$('body').attr("style","overflow-y:hidden;height:100%");
 		$('.pop-up').removeClass("d-none")
 		setTimeout(()=>{
@@ -57,26 +57,26 @@ const decrement = () => {
 }
 
 
-const tambahMenu = () => {
-	let element = `<div class="wrapper-add-menu">
-                		<div class="col-3-button-add">
-                    		<i class="fa-solid fa-minus minus-menu"></i>
-                		</div>
-                		<div class="col-3-button-add">
-                  			<input type="number" value="0" class="value-pesan-menu" disabled>
-                		</div>
-                		<div class="col-3-button-add add-menu">
-                    		<i class="fa-solid fa-plus"></i>
-                		</div>
-              		</div>`;
+// const tambahMenu = () => {
+// 	let element = `<div class="wrapper-add-menu">
+//                 		<div class="col-3-button-add">
+//                     		<i class="fa-solid fa-minus minus-menu"></i>
+//                 		</div>
+//                 		<div class="col-3-button-add">
+//                   			<input type="number" value="0" class="value-pesan-menu" disabled>
+//                 		</div>
+//                 		<div class="col-3-button-add add-menu">
+//                     		<i class="fa-solid fa-plus"></i>
+//                 		</div>
+//               		</div>`;
 
-	$('.tambah-menu').on('click',function(e){
-		$(this).addClass('b-none');
-		$(this).html(element);
-	})
+// 	$('.tambah-menu').on('click',function(e){
+// 		$(this).addClass('b-none');
+// 		$(this).html(element);
+// 	})
 
-	$('.tambah-menu-list').on('click',function(e){
-		$(this).addClass('b-none');
-		$(this).html(element);
-	})
-}
+// 	$('.tambah-menu-list').on('click',function(e){
+// 		$(this).addClass('b-none');
+// 		$(this).html(element);
+// 	})
+// }
