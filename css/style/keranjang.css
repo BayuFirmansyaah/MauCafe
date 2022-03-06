@@ -1,0 +1,188 @@
+@import url("root.css");
+
+.body{
+	padding-bottom: 60px;
+}
+
+.wrap-list-order{
+	margin-top: 60px;
+}
+
+.order-list{
+	width: 100%;
+	height: 135px;
+	padding: 5px;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+}
+
+.order-list:nth-child(1){
+	border-top: 1px solid #ccc;
+}
+
+.left{
+	width: 59%;
+	height: 100%;
+	float: left;
+	padding: 10px 2.5px;
+}
+
+.right{
+	width: 40%;
+	height: 100%;
+	float: right;
+}
+
+.title-menu{
+	font-size: 19px;
+}
+
+.harga-menu{
+	font-size: 15px;
+	margin-top: -3px;
+}
+
+.thumbnail-menu-order{
+	width: 80%;
+	height: 90px;
+	background-color: #ccc;
+	float: right;
+}
+
+.count-order-menu{
+	width: 80%;
+	margin-top: 5px;
+	height: 40px;
+	float: right;
+}
+
+.count-order-menu button{
+	width: 30%;
+	height: 30px;
+	float: left;
+	background-color:var(--success);
+	color: white;
+	font-size: 16px;
+	text-align: center;
+	line-height: 25px;
+	margin: 0px 1.5%;
+	border: none;
+	outline: none;
+}
+
+.value-order{
+	background-color: #ccc !important;
+	color: black !important;
+	line-height: 32px !important;
+	font-size: 18.5px !important;
+}
+
+
+.voucher{
+	margin-top: 30px;
+	width: 100%;
+	height: 60px;
+	border : 1px solid #ccc;
+	border-radius: 8px;
+	position: relative;
+	padding: 5px;
+}
+
+.thumbnail-voucher{
+	width: 45px;
+	height: 45px;
+	background-color: orange;
+	border-radius: 50%;
+	margin: 1.5px;
+	margin-left: 10px;
+}
+
+.detail-voucher{
+	width: 80%;
+	height: 60px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 0px 5px;
+}
+
+.text-voucher{
+	font-size: 16.5px;
+	line-height: 60px;
+}
+
+
+.total-pembelian{
+	width: 100%;
+	background-color: #ccc;
+	margin-top: 20px;
+	padding: 7.5px;
+	margin-bottom: 20px;
+}
+
+.text-ringkasan-pembelian{
+	font-size: 15px;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+
+.text-ringkasan-pembelian::after{
+	content: '';
+	width: 95%;
+	left: 2.5%;
+	right: 2.5%;
+	height: 1.5px;
+	background-color: #acacac;
+	position: absolute;
+	bottom: -15px;
+}
+
+.order-menu-total{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+}
+
+.title-order{
+	width: 65%;
+	height: 100%;	float: left;
+}
+
+.title-order h2,
+.price-order h2{
+	font-size: 14px;
+	line-height: 30px;
+}
+
+.price-order{
+	width: 35%;
+	height:100%;
+	float: right;
+	text-align: right;
+}
+
+hr{
+	width: 95%;
+	left: 2.5%;
+	right: 2.5%;
+	position: relative;
+	height: 1.5px;
+	background-color: #acacac;
+	margin: 5px 0px;
+}
+
+.button-pesan{
+	width: 100%;
+	height: 40px;
+	background-color: var(--success);
+	margin-bottom: 30px;
+	color: white;
+	text-align: center;
+	line-height: 40px;
+	font-size: 18px;
+	margin-top: 20px;
+	border-radius: 8px;
+}
+
+
