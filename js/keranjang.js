@@ -25,3 +25,25 @@ $('.button-minus').on('click',function(){
 	let value_box = document.querySelectorAll('.order-list')[id]
 		value_box = value_box.querySelector('.value-order').innerText=value;
 })
+
+
+$(".location-user").on('click',function(){
+	$('body').attr("style","overflow-y:hidden;height:100%");
+	$('.pop-up-location').removeClass("d-none")
+	setTimeout(()=>{
+		$('.detail-location-pop-up').addClass("show-pop-up-location");
+	},200)
+})
+
+$('.close-pop-up-button').on('click',function(e){
+		setTimeout(()=>{
+			$('.detail-location-pop-up').addClass("close-pop-up-location");
+		})
+
+		setTimeout(()=>{
+			$('body').attr("style"," ");
+			$('.pop-up-location').addClass("d-none");
+			$('.detail-location-pop-up').removeClass("show-pop-up-location");
+			$('.detail-location-pop-up').removeClass("close-pop-up-location");
+		},500)
+	})

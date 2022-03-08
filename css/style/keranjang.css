@@ -118,7 +118,6 @@
 	line-height: 60px;
 }
 
-
 .total-pembelian{
 	width: 100%;
 	background-color: #ccc;
@@ -132,7 +131,6 @@
 	margin-bottom: 20px;
 	position: relative;
 }
-
 
 .text-ringkasan-pembelian::after{
 	content: '';
@@ -181,15 +179,154 @@ hr{
 
 .button-pesan{
 	width: 100%;
-	height: 40px;
+	height: 50px;
 	background-color: var(--success);
 	margin-bottom: 30px;
 	color: white;
 	text-align: center;
-	line-height: 40px;
+	line-height: 50px;
 	font-size: 18px;
 	margin-top: 20px;
 	border-radius: 8px;
 }
 
+.location-user{
+	width: 100%;
+	height: 60px;
+	margin: 15px 0px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+.location-user .left{
+	width: 90%;
+	height: 100%;
+	float: left;
+	padding: 5px 10px;
+}
+
+.text-location-user{
+	font-size: 17.5px;
+	line-height: 50px;
+}
+
+.location-user .right{
+	width: 10%;
+	height: 100%;
+	float: right;
+	text-align: center;
+	font-size: 19px;
+	line-height: 50px;
+}
+
+
+.pop-up-location{
+	position: fixed;
+	z-index: 90;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.wrap-pop-up{
+	width: 100%;
+	height: 100% !important;
+	position: absolute;
+	transform: translateX(-50%);
+	left: 50%;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+.detail-location-pop-up{
+	width: 100%;
+	height: 360px;
+	background-color: white;
+	position: absolute;
+	left: 0px;
+	border-top-left-radius:15px;
+	border-top-right-radius:15px;
+	padding: 15px;
+	cursor: pointer;
+	bottom: -360px;
+}
+
+.show-pop-up-location{
+	animation: showUpLoc .5s ease-in-out;
+	bottom: 57px;
+}
+
+.close-pop-up-location{
+	animation: closeUpLoc .5s ease-in-out;
+	bottom: -360px;
+}
+
+@keyframes showUpLoc{
+	0%{
+		bottom: -360px;
+	}
+
+	100%{
+		bottom: 57px;
+	}
+}
+
+@keyframes closeUpLoc{
+	0%{
+		bottom: 60px;
+	}
+
+	100%{
+		bottom: -500px;
+	}
+}
+
+
+
+.search-location-pop-up{
+	width: 100%;
+	height: 310px;
+}
+
+.wrap-input-search{
+	width: 100%;
+	height: 50px;
+	position: relative;
+}
+
+.wrap-input-search i {
+	position: absolute;
+	right: 10px;
+	line-height: 50px;
+	font-size: 17px;
+}
+
+.search-location{
+	width: 100%;
+	height: 50px;
+	outline: none;
+	border: none;
+	border-bottom:  1px solid #ccc;
+	font-size: 17px;
+	padding:  0px 10px;
+}
+
+
+.location-list{
+	width: 100%;
+	height: 50px;
+	padding:  0px 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+.location-list:nth-child(1){
+	margin-top: 5px;
+}
+
+.location-list h2{
+	font-size: 17.5px;
+	line-height: 50px;
+}
 
