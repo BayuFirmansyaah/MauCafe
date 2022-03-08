@@ -308,7 +308,7 @@ hr{
 	height: 50px;
 	outline: none;
 	border: none;
-	border-bottom:  1px solid #ccc;
+	border-bottom:  1.5px solid #ccc;
 	font-size: 17px;
 	padding:  0px 10px;
 }
