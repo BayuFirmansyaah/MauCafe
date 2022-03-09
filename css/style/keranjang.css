@@ -220,7 +220,8 @@ hr{
 }
 
 
-.pop-up-location{
+.pop-up-location,
+.pop-up-discount{
 	position: fixed;
 	z-index: 90;
 	top: 0px;
@@ -240,7 +241,8 @@ hr{
 	background-color: rgba(0, 0, 0, .5);
 }
 
-.detail-location-pop-up{
+.detail-location-pop-up,
+.detail-discount-pop-up{
 	width: 100%;
 	height: 360px;
 	background-color: white;
@@ -253,12 +255,14 @@ hr{
 	bottom: -360px;
 }
 
-.show-pop-up-location{
+.show-pop-up-location,
+.show-pop-up-discount{
 	animation: showUpLoc .5s ease-in-out;
 	bottom: 0px;
 }
 
-.close-pop-up-location{
+.close-pop-up-location,
+.close-pop-up-discount{
 	animation: closeUpLoc .5s ease-in-out;
 	bottom: -360px;
 }
@@ -314,19 +318,31 @@ hr{
 }
 
 
-.location-list{
+.location-list,
+.discount-list{
 	width: 100%;
 	height: 50px;
 	padding:  0px 10px;
 	border-bottom: 1px solid #ccc;
 }
 
-.location-list:nth-child(1){
+.discount-list{
+	height: 60px !important;
+}
+
+.location-list:nth-child(1),
+.discount-list:nth-child(1){
 	margin-top: 5px;
 }
 
-.location-list h2{
+.location-list h2,
+.discount-list h2{
 	font-size: 17.5px;
 	line-height: 50px;
+}
+
+.discount-list h2{
+	font-size: 18.5px;
+	line-height: 60px !important;
 }
 

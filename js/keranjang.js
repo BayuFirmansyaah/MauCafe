@@ -30,6 +30,7 @@ $('.button-minus').on('click',function(){
 		value_box = value_box.querySelector('.value-order').innerText=value;
 })
 
+// modal location
 
 $(".location-user").on('click',function(){
 	$('body').attr("style","overflow-y:hidden;height:100%");
@@ -39,7 +40,7 @@ $(".location-user").on('click',function(){
 	},200)
 })
 
-$('.close-pop-up-button').on('click',function(e){
+$('#close-pop-up-button-location').on('click',function(e){
 	setTimeout(()=>{
 		$('.detail-location-pop-up').addClass("close-pop-up-location");
 	})
@@ -69,4 +70,42 @@ $('.location-list').on('click',function(){
 })
 
 
+// modal voucher
+$(".voucher").on('click',function(){
+	$('body').attr("style","overflow-y:hidden;height:100%");
+	$('.pop-up-discount').removeClass("d-none")
+	setTimeout(()=>{
+		$('.detail-discount-pop-up').addClass("show-pop-up-discount");
+	},200)
+})
 
+$('#close-pop-up-button-voucher').on('click',function(e){
+	setTimeout(()=>{
+		$('.detail-discount-pop-up').addClass("close-pop-up-discount");
+	})
+
+	setTimeout(()=>{
+		$('body').attr("style"," ");
+		$('.pop-up-discount').addClass("d-none");
+		$('.detail-discount-pop-up').removeClass("show-pop-up-discount");
+		$('.detail-discount-pop-up').removeClass("close-pop-up-discount");
+	},500)
+})
+
+$('.discount-list').on('click',function(){
+	let diskon = $(this).attr("data-diskon")
+	$('.detail-voucher').html(`
+		<h2 class="text-voucher f-pps-l" id="text-voucher">Yeayy kamu dapat diskon ${diskon} %</h2>
+        </div>`)
+
+	setTimeout(()=>{
+		$('.detail-discount-pop-up').addClass("close-pop-up-discount");
+	})
+
+	setTimeout(()=>{
+		$('body').attr("style"," ");
+		$('.pop-up-discount').addClass("d-none");
+		$('.detail-discount-pop-up').removeClass("show-pop-up-discount");
+		$('.detail-discount-pop-up').removeClass("close-pop-up-discount");
+	},500)
+})
