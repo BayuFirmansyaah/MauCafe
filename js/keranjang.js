@@ -1,3 +1,7 @@
+$('.button-back').on('click',()=>{
+	history.back();
+})
+
 $('.button-plus').on('click',function(){
 	let id = $(this).attr('data-id')
 	let value = document.querySelectorAll('.order-list')[id]

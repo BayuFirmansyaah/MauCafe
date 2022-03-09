@@ -1,7 +1,7 @@
 @import url("root.css");
 
 .body{
-	padding-bottom: 60px;
+	padding-bottom: 20px;
 }
 
 .wrap-list-order{
@@ -181,7 +181,7 @@ hr{
 	width: 100%;
 	height: 50px;
 	background-color: var(--success);
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 	color: white;
 	text-align: center;
 	line-height: 50px;
@@ -255,7 +255,7 @@ hr{
 
 .show-pop-up-location{
 	animation: showUpLoc .5s ease-in-out;
-	bottom: 57px;
+	bottom: 0px;
 }
 
 .close-pop-up-location{
@@ -269,17 +269,17 @@ hr{
 	}
 
 	100%{
-		bottom: 57px;
+		bottom: 0px;
 	}
 }
 
 @keyframes closeUpLoc{
 	0%{
-		bottom: 60px;
+		bottom: 0px;
 	}
 
 	100%{
-		bottom: -500px;
+		bottom: -360px;
 	}
 }
 

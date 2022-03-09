@@ -18,6 +18,15 @@ const showPopUp = () => {
 			$('.detail-pop-up').addClass("show-pop-up");
 		},200)
 	})
+
+	$('.tambah-menu-list').on('click',function(e){
+		$('body').attr("style","overflow-y:hidden;height:100%");
+		$('.pop-up').removeClass("d-none")
+		setTimeout(()=>{
+			$('.pop-up').addClass("pop-up-size");
+			$('.detail-pop-up').addClass("show-pop-up");
+		},200)
+	})
 }
 
 
