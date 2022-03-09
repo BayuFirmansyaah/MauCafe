@@ -40,8 +40,8 @@
 
 .content{
 	width: 100%;
-	min-height: 700px;
 	margin-top: 45px;
+	padding-bottom: 30px;
 }
 
 
@@ -60,6 +60,7 @@
 	position: absolute;
 	transform: translate(-50%);
 	top: 15%;
+	background-size: 60px 60px;
 	left: 10%;
 }
 

@@ -118,7 +118,7 @@ body{
 }
 
 .pop-up-size{
-	position: absolute;
+	position: fixed;
 	z-index: 90;
 	top: 0px;
 	left: 0px;
@@ -145,7 +145,7 @@ body{
 
 .detail-pop-up{
 	width: 100%;
-	height: 500px;
+	height: 560px;
 	background-color: white;
 	position: absolute;
 	left: 0px;
@@ -153,11 +153,21 @@ body{
 	border-top-right-radius:15px;
 	padding: 15px;
 	bottom: -500px;
+	cursor: pointer;
 }
 
 .show-pop-up{
 	animation: showUp .5s ease-in-out;
 	bottom: 60px;
+}
+
+.close-pop-up-button{
+	width: 35%;
+	height: 6.5px;
+	border-radius: 20px;
+	margin: 0px auto;
+	background-color: #777575;
+	margin-bottom: 15px;
 }
 
 .close-pop-up{
@@ -192,7 +202,7 @@ body{
 	width: 100%;
 	height: 50px;
 	position: absolute;
-	bottom: 10px;
+	bottom: 30px;
 }
 
 .column-button-add{
@@ -202,9 +212,19 @@ body{
 	text-align: center;
 	line-height: 50px;
 	font-size: 20px;
+	margin-bottom: 15px;
 }
 
-.column-button-add input{
+.value-pesan{
+	font-size: 25px;
+	background-color: red;
+	height: 50px;
+	line-height: 50px;
+	background-color: rgba(0, 0, 0, .1);
+}
+
+.column-button-add input,
+.col-3-button-add input{
 	width:100%;
 	height: 100%;
 	border: none;
@@ -216,13 +236,16 @@ body{
 }
 
 .column-button-add:nth-child(1),
-.column-button-add:nth-child(3){
+.column-button-add:nth-child(3),
+.col-3-button-add:nth-child(1),
+.col-3-button-add:nth-child(3){
 	width: 30%;
 	background-color: var(--success);
 	color: white;
 }
 
-.column-button-add:nth-child(2){
+.column-button-add:nth-child(2),
+.col-3-button-add:nth-child(2){
 	margin: 0px 3%;
 }
 
@@ -247,6 +270,43 @@ body{
 		bottom: -500px;
 	}
 }
+
+
+.wrapper-add-menu{
+	width: 100%;
+	height: 30px;
+}
+
+.col-3-button-add{
+	width: 33%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	font-size: 16px;
+	line-height: 32px;
+}
+
+.col-3-button-add input{
+	font-size: 18px;
+	border-radius: 0px;
+	text-align: center;
+}
+
+.button-submit-pesanan{
+	width: 93%;
+	left: 15px;
+	right:25px;
+	position: absolute;
+	bottom: 20px;
+	margin-top: 20px;
+	height: 50px;
+	background-color: var(--success);
+	text-align: center;
+	line-height: 50px;
+	font-size: 17px;
+	color: white;
+}
+
 
 /*end resuable element*/
 

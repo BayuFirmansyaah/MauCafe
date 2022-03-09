@@ -9,29 +9,29 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
     <!-- my css -->
-    <link rel="stylesheet" href="./css/style/index.css">
+    <link rel="stylesheet" href="./css/style/otp.css">
     <link rel="stylesheet" href="./css/style/media-query.css">
 
-    <title>Selamat Datang</title>
+    <title>Mau Cafe | Login</title>
   </head>
   <body>
     
     <section class="body">
-        <h2 class="f-pps-l size-head t-a-c txt-s-dtg">Selamat Datang di Mau Kopi</h2>
 
-        <div class="big-icon" style="background-image: url('img/welcome.png');">
+        <h2 class="f-pps-m size-head t-a-c txt-login">Masukan Email Anda</h2>
+
+        <div class="wrap-notification">
           
         </div>
 
+        <div class="wrapp-form">
+            <form >
+                <input type="email" name="email" style="width:100%;text-align: left;">
+            </form>
 
-        <div class="wrap-button">
-          <a href="register.html">
-              <button class="register t-a-c f-pps-l size-medium">Register</button>  
-          </a>
-          <a href="login.html">
-              <button class="login t-a-c f-pps-l size-medium">Login</button>   
-          </a>
+           <button class="f-pps-l">Reset Password</button>
         </div>
+
     </section>
 
     <!-- Optional JavaScript; choose one of the two! -->
@@ -39,6 +39,13 @@
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script>
+      function clickEvent(first,last){
+          if(first.value.length){
+            document.querySelector("#"+last).focus();
+          }
+      }
+    </script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
