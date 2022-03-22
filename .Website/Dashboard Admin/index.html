@@ -68,9 +68,16 @@
                   <thead>
                     <tr >
                       <th class="head" colspan="4">
-                      <div class="sort">
-                        <button type="button" class="btn" style="margin-top: 0px;">Judul<i class="fas fa-chevron-down" style="margin-left: 5px"></i></button>
-                        <button type="button" class="btn" style="margin-top: 0px;">Keterangan<i class="fas fa-chevron-down" style="margin-left: 5px"></i></button>
+                        <div class="sort">
+                          <button id="dropdownMenuButton" type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-top: 0px;">Judul</button>
+                          <button id="dropdownMenuButton" type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-top: 0px;">Keterangan</button>
+                        
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">MauCafe</a>
+                            <a class="dropdown-item" href="#">KopiGrf</a>
+                          </div>
+
+                        </div>
                       </th>
                       
                     </tr>
@@ -87,8 +94,8 @@
                       <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</td>
                      <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</td>
                      <td style="text-align: right;">
-                      <a  class="btn" data-toggle="tooltip" title="Edit"><i class="fas fa-pen"></i></a>
-                      <a class="btn" data-toggle="tooltip" title="Delete" onclick="return confirm('apakah anda yakin')"><i class="fas fa-trash-alt"></i></a>
+                      <a  class="btn" data-toggle="modal" data-target="#modalUpdate" title="Edit"><i class="fas fa-pen"></i></a>
+                      <a class="btn" data-toggle="tooltip" title="Delete"><i class="fas fa-trash-alt"></i></a>
                       <a  class="btn" data-toggle="tooltip" title="Save"><i class="fas fa-save"></i></a>
                       <a  class="btn" title="Detail" data-toggle="modal" data-target="#modalDetail"><i class="fas fa-info-circle"></i></a>
                      </td>
@@ -100,8 +107,8 @@
                       <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</td>
                      <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</td>
                      <td style="text-align: right;">
-                      <a  class="btn" data-toggle="tooltip" title="Edit"><i class="fas fa-pen"></i></a>
-                      <a class="btn" data-toggle="tooltip" title="Delete" onclick="return confirm('apakah anda yakin')"><i class="fas fa-trash-alt"></i></a>
+                      <a  class="btn" data-toggle="modal" data-target="#modalUpdate" title="Edit"><i class="fas fa-pen"></i></a>
+                      <a  class="btn" data-toggle="tooltip" title="Edit"><i class="fas fa-trash-alt"></i></a>
                       <a  class="btn" data-toggle="tooltip" title="Save"><i class="fas fa-save"></i></a>
                       <a  class="btn" title="Detail" data-toggle="modal" data-target="#modalDetail"><i class="fas fa-info-circle"></i></a>
                     </td>
@@ -124,6 +131,44 @@
                    
                   </tbody>
                 </table>
+
+                <!-- Update Modal -->
+                <div class="modal fade" id="modalUpdate" role="dialog" aria-labelledby="updateModal" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Edit Data</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+
+                        <div class="modal-body">
+                          <form action="">
+                            <div class="form-group">
+                              <label>Gambar</label>
+                              <input type="text" name="" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                              <label>Judul</label>
+                              <input type="text" name="" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                              <label>Keterangan</label>
+                              <input type="text" name="" class="form-control">
+                            </div>
+                          </form>
+                        </div>
+
+                        <div class="modal-footer">
+                          <button type="submit" class="btn btn-primary">SUBMIT</button>
+                        </div>
+    
+                    </div>
+                  </div>
+                </div>
 
                 <!-- Pop Up Profile -->
                 <div class="modal fade" id="modalDetail" role="dialog" aria-labelledby="detailModal" aria-hidden="true">
